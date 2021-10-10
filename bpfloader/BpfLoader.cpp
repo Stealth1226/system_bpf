@@ -112,6 +112,7 @@ void createSysFsBpfSubDir(const char* const prefix) {
 }
 
 int main() {
+/*
     // Load all ELF objects, create programs and maps, and pin them
     for (const auto location : locations) {
         createSysFsBpfSubDir(location.prefix);
@@ -125,7 +126,7 @@ int main() {
             return 2;
         }
     }
-
+*/
     if (android::base::SetProperty("bpf.progs_loaded", "1") == false) {
         ALOGE("Failed to set bpf.progs_loaded property");
         return 1;

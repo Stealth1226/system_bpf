@@ -33,6 +33,7 @@ cc_binary {
         "-Wall",
         "-Werror",
         "-Wthread-safety",
+        "-Wno-unused-variable",
     ],
     sanitize: {
         integer_overflow: true,
